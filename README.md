@@ -23,11 +23,17 @@ Gained familiarity with Spring Boot and JPA for database interactions.
 Improved understanding of Git workflows (forking, cloning, committing, pushing).
 Learned to navigate and extend a pre-existing Spring application.
 
+Structure Highlights
 
+entities: Houses all entity classes, each annotated with JPA annotations to map to database tables.
+controllers: Manages HTTP requests and responses, interacting with services to process data.
+repositories: Provides data access methods for CRUD operations, leveraging Spring Data JPA.
+services: Contains business logic, acting as an intermediary between controllers and repositories.
+application.properties: Configures the application, including database connection details and JPA settings.
 
 Project Structure
 The project follows a standard Spring Boot structure, organized for clarity and modularity:
-src
+```src
 └── main
     ├── java
     │   └── com.example
@@ -37,11 +43,3 @@ src
     │       └── services        # Service classes for business logic
     └── resources
         └── application.properties  # Configuration file for Spring Boot and database settings
-
-Structure Highlights
-
-entities: Houses all entity classes, each annotated with JPA annotations to map to database tables.
-controllers: Manages HTTP requests and responses, interacting with services to process data.
-repositories: Provides data access methods for CRUD operations, leveraging Spring Data JPA.
-services: Contains business logic, acting as an intermediary between controllers and repositories.
-application.properties: Configures the application, including database connection details and JPA settings.
